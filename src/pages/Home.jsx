@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
+import smitLogo from '../assets/smit-logo-removebg-preview.png'
 
 export default function Home() {
   const posts = [
@@ -14,6 +15,7 @@ export default function Home() {
       {/* Hero */}
       <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-green-800 text-white py-20 px-4 text-center">
         <div className="max-w-4xl mx-auto">
+             <img src={smitLogo} alt="SMIT" className="w-20 h-20 rounded-full mx-auto mb-4 object-cover" />
           <div className="inline-block bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Saylani Mass IT Training</div>
           <h1 className="text-4xl md:text-6xl font-black mb-4 leading-tight">Empowering Pakistan's<br /><span className="text-green-400">Digital Future</span></h1>
           <p className="text-blue-200 text-lg mb-8 max-w-2xl mx-auto">Join thousands of students learning world-class IT skills for free. Apply for courses, manage your learning journey, all in one place.</p>

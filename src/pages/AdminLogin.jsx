@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { loginAdmin } from '../features/auth/authSlice'
 import { supabase } from '../lib/supabaseClient'
+import smitLogo from '../assets/smit-logo-removebg-preview.png'
 import { useNavigate, Link } from 'react-router-dom'
 import toast from 'react-hot-toast'
 
@@ -38,7 +39,8 @@ export default function AdminLogin() {
       <div className="bg-white rounded-3xl shadow-2xl w-full max-w-md overflow-hidden">
         <div className="bg-gradient-to-r from-blue-900 to-green-800 p-8 text-center text-white">
           <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3">
-            <span className="text-blue-900 font-black text-lg">🔐</span>
+            {/* <span className="text-blue-900 font-black text-lg">🔐</span> */}
+            <img src={smitLogo} alt="SMIT Logo" className="w-full h-full object-cover" />
           </div>
           <h1 className="text-2xl font-black">Admin Panel</h1>
           <p className="text-blue-200 text-sm mt-1">SMIT Connect Administration</p>
