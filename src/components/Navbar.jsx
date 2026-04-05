@@ -17,7 +17,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-gradient-to-r from-blue-900 to-green-800 text-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-gradient-to-r from-white via-blue-800 to-green-800 text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
           {/* <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">

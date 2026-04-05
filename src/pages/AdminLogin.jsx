@@ -49,12 +49,12 @@ export default function AdminLogin() {
           <form onSubmit={handleLogin} className="p-8 space-y-5">
             <div>
               <label className="text-sm font-semibold text-gray-700 block mb-1">Username</label>
-              <input type="text" required value={form.username} onChange={(e) => setForm({ ...form, username: e.target.value })}
+              <input type="text" placeholder='admin' required value={form.username} onChange={(e) => setForm({ ...form, username: e.target.value })}
                 className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
             </div>
             <div>
               <label className="text-sm font-semibold text-gray-700 block mb-1">Password</label>
-              <input type="password" required value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })}
+              <input type="password" placeholder='admin123' required value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })}
                 className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
             </div>
             <button type="submit" disabled={loading} className="w-full bg-gradient-to-r from-blue-800 to-green-700 text-white font-bold py-3 rounded-xl hover:opacity-90 transition">
